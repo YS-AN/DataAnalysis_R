@@ -123,10 +123,15 @@ is.matrix(number.info)
 is.data.frame(mat04) #자료구조가 매트릭스인지 확인 
 is.data.frame(number.info) 
 
+mat$ChoiNew #매트릭스에서는 사용이 불가능 - 오류남
+number.info$text #데이터프레임만 가능함함
+
 mat04 <- data.frame(mat04) #매트릭스를 데이터프레임으로 변환
 class(mat04)
 head(mat04)
 
-
-mat$ChoiNew #매트릭스에서는 사용이 불가능 - 오류남
-number.info$text #데이터프레임만 가능함함
+mat05 <- as.matrix(number.info) #데이터프렝미을 매트릭스로 변환 (문쟈열이 있어서 전체가 다 문자열로 변환 됨)
+mat05
+class(mat05)
+head(mat05)
+mat05$text #매트릭스가 돼서 $로 호출 못함
