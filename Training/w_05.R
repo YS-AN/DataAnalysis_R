@@ -104,3 +104,16 @@ idx
 
 idx <- which(iris[, 1:4] > 5.0, arr.ind = FALSE) #arr.ind = FALSE 하면 행 위치만 나옴
 idx
+
+#퀴즈 1번 
+nrow <- nrow(iris)
+dsv <- c()
+i <- 1
+inx <- 1
+for(i in 1:nrow){
+  if(iris$Petal.Length[i] > 1.5) {
+    dsv[inx] = iris$Petal.Length[i];
+    inx <- inx + 1
+  }
+}
+print(dsv)
