@@ -80,3 +80,12 @@ var(mydata) #분산 - 흩어져 있는 정도
 sd(mydata) #표준편차
 range(mydata ) #값의 범위
 diff(range(mydata)) # 최댓값, 최솟값의 차이
+
+
+#퀴즈
+#01
+Add <- function(x, y) {
+  return(x + y)
+}
+sum <- Add(10, 7)
+print(sum);
